@@ -1,0 +1,28 @@
+.breadcrump {
+}
+.breadcrump-list {
+   display: flex;
+   align-items: center;
+   padding: 18px 0;
+   margin: 0;
+   list-style: none;
+   // .breadcrump-list__item
+
+   &__item {
+      font-size: 10px;
+      line-height: 13px;
+      &:not(:last-child) {
+         &::after {
+            content: "/";
+            margin-right: 4px;
+         }
+      }
+   }
+
+   // .breadcrump-list__link
+
+   &__link {
+      text-decoration: none;
+      color: inherit;
+   }
+}
