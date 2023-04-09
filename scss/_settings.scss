@@ -42,7 +42,7 @@ body {
    font-family: "Mulish", sans-serif;
    font-size: 14px;
    font-weight: 500;
-   color: #252b42;
+   color: $text-color;
 }
 
 .wrapper {
@@ -52,7 +52,7 @@ body {
    flex-direction: column;
 }
 
-._container {
+.container {
    max-width: 1110px;
    padding: 0px 15px;
    margin: 0 auto;
