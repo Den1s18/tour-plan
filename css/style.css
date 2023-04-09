@@ -383,9 +383,17 @@ template {
   padding-bottom: 40px;
 }
 
+.logo {
+  width: 177px;
+}
+
 .header__search {
   margin-right: auto;
   margin-left: 108px;
+}
+
+.header-buttom {
+  background-color: #0a223d;
 }
 
 .search {
@@ -416,6 +424,9 @@ template {
   border: none;
   background-color: #ec1f46;
 }
+.search__button:hover {
+  background-color: #0a223d;
+}
 
 .user {
   display: flex;
@@ -434,4 +445,57 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+.header-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 31px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+.header-menu__link {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+.header-menu__link:hover {
+  color: gray;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 700px;
+  }
+  .header-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header__search {
+    margin-left: auto;
+    max-width: 340px;
+  }
+  .header-menu {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+  .header-menu__link {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 576px;
+    width: 92%;
+  }
 }

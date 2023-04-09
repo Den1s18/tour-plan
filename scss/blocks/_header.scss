@@ -11,12 +11,16 @@
    padding-bottom: 40px;
 }
 .logo {
+   width: 177px;
 }
 .logo-image {
 }
 .header__search {
    margin-right: auto;
    margin-left: 108px;
+}
+.header-buttom {
+   background-color: $dark;
 }
 .search {
    display: flex;
@@ -49,6 +53,9 @@
       height: 100%;
       border: none;
       background-color: $prymary;
+      &:hover {
+         background-color: $dark;
+      }
    }
 }
 .user {
@@ -74,6 +81,13 @@
    }
 }
 .header-menu {
+   list-style-type: none;
+   margin: 0;
+   padding: 31px 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: $light;
    // .header-menu__item
 
    &__item {
@@ -82,5 +96,13 @@
    // .header-menu__link
 
    &__link {
+      color: inherit;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      &:hover {
+         color: gray;
+      }
    }
 }
