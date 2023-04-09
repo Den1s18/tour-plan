@@ -16,7 +16,6 @@
    }
    .header__search {
       margin-left: auto;
-      max-width: 340px;
    }
    .header-menu {
       padding-top: 22px;
@@ -24,6 +23,11 @@
       &__link {
          font-size: 12px;
          line-height: 15px;
+      }
+   }
+   .search {
+      &__input {
+         width: 340px;
       }
    }
 }
@@ -47,6 +51,7 @@
          display: flex;
          width: 16px;
          height: 11px;
+         padding: 0;
          align-items: center;
          justify-content: space-between;
          flex-direction: column;
