@@ -63,6 +63,11 @@
    .map {
       width: 340px;
    }
+   .reviews-swiper {
+      &__item {
+         max-width: 580px;
+      }
+   }
 }
 @media (max-width: 768px) {
    .container {
@@ -145,6 +150,28 @@
       align-items: flex-start;
       flex-direction: column;
    }
+   .reviews-swiper {
+      &__item {
+         padding: 0 30px 30px;
+         &::after,
+         &::before {
+            display: none;
+         }
+      }
+      &__button {
+         top: 45px;
+      }
+      &__button-prev {
+         left: 50%;
+         margin-left: -65px;
+         transform: translate(-50%, 0);
+      }
+      &__button-next {
+         right: 50%;
+         margin-right: -65px;
+         transform: translate(50%, 0);
+      }
+   }
 }
 @media (max-width: 576px) {
    .logo {
@@ -167,5 +194,13 @@
    }
    .newsletter__title {
       margin-bottom: 37px;
+   }
+   .reviews {
+      padding: 40px 0 50px 0;
+      &__title {
+         font-size: 18px;
+         line-height: 23px;
+         margin-bottom: 30px;
+      }
    }
 }
