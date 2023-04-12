@@ -2,7 +2,7 @@
    .container {
       max-width: 960px;
    }
-   .slider {
+   .hotel-slider {
       width: 590px;
       margin-right: 20px;
    }
@@ -47,7 +47,7 @@
    .hotel-grid {
       flex-direction: column;
    }
-   .slider {
+   .hotel-slider {
       width: 100%;
    }
    .hotel__slider {
@@ -123,7 +123,7 @@
          display: none;
       }
    }
-   .slider {
+   .hotel-slider {
       width: 100%;
    }
    .hotel-right {
@@ -150,7 +150,7 @@
    .logo {
       width: 99px;
    }
-   .slider {
+   .hotel-slider {
       height: 250px;
    }
    .hotel__slider {
@@ -161,6 +161,9 @@
    }
    .newsletter {
       padding: 76px 0 83px 0;
+   }
+   .newsletter-wrapper {
+      align-items: center;
    }
    .newsletter__title {
       margin-bottom: 37px;
