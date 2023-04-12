@@ -19,3 +19,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
       prevEl: '.reviews-swiper__button-prev',
    },
 });
+
+
+
+$('.parallax-window').parallax({ imageSrc: '/img/newsletter/newsletter-bg.jpg' });

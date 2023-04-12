@@ -1,7 +1,8 @@
 .newsletter {
    position: relative;
+   min-height: 260px;
+   background: transparent;
    padding: 98px 0 87px 0;
-   background-image: url(../img/newsletter/newsletter-bg.jpg);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -48,7 +49,7 @@
 }
 .subscribe {
    position: relative;
-   width: 355px;
+   width: 350px;
    height: 55px;
    border-radius: 4px;
    overflow: hidden;
