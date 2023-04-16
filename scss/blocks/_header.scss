@@ -1,5 +1,13 @@
 .header {
    background-color: #fff;
+   &__user,
+   &__search {
+      &--mobile {
+         &-visible {
+            display: flex;
+         }
+      }
+   }
 }
 .container {
 }
@@ -95,6 +103,9 @@
    // .header-menu__item
 
    &__item {
+      &--mobile-visible {
+         display: none;
+      }
    }
 
    // .header-menu__link

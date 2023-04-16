@@ -21,5 +21,13 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
 });
 
 
-
 $('.parallax-window').parallax({ imageSrc: '/img/newsletter/newsletter-bg.jpg' });
+
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+   console.log("Клик по кнопке меню");
+   document
+      .querySelector(".header-buttom")
+      .classList.toggle("header__buttom-visible");
+});
