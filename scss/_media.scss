@@ -85,6 +85,55 @@
    .activities__card {
       margin-bottom: 20px;
    }
+
+   .footer {
+      padding-top: 70px;
+      padding-bottom: 46px;
+      &-wrapper {
+         display: grid;
+         grid-template-columns: repeat(3, minmax(min-content, 1fr));
+         grid-gap: 20px;
+         grid-auto-rows: auto;
+      }
+      &__logo {
+         width: 110px;
+         grid-row: 1 / 2;
+         grid-column: span 1;
+      }
+      &__categories {
+         grid-row: 2 / 3;
+      }
+      &__title {
+         font-size: 16px;
+         white-space: nowrap;
+      }
+      &__social-network {
+         align-self: center;
+         grid-row: 1 / 2;
+         grid-column: span 3;
+      }
+      &__contact-details {
+         grid-column: span 4;
+      }
+      &__contact-form {
+         grid-column: span 4;
+      }
+      &__form {
+      }
+      &__buttom {
+         justify-content: center;
+         &-list {
+            margin-right: 70px;
+         }
+      }
+   }
+   .footer {
+      &__buttom {
+         &-list {
+            margin-right: 200px;
+         }
+      }
+   }
 }
 @media (max-width: 768px) {
    .container {
@@ -197,6 +246,46 @@
       width: 49%;
       height: 255px;
    }
+
+   .footer {
+      &-wrapper {
+         display: grid;
+         grid-template-columns: repeat(auto-fit(300px, 1fr));
+         grid-gap: 20px;
+         grid-auto-rows: auto;
+      }
+      &__logo {
+         width: 110px;
+         grid-row: 1 / 2;
+         grid-column: span 1;
+      }
+      &__categories {
+         grid-row: 2 / 3;
+      }
+      &__title {
+         font-size: 16px;
+         white-space: normal;
+      }
+      &__social-network {
+         align-self: center;
+         grid-row: 1 / 2;
+         grid-column: span 3;
+      }
+      &__contact-details {
+         grid-column: span 4;
+      }
+      &__contact-form {
+         grid-column: span 4;
+      }
+      &__form {
+      }
+      &__buttom {
+         justify-content: center;
+         &-list {
+            margin-right: 70px;
+         }
+      }
+   }
 }
 @media (max-width: 576px) {
    .logo {
@@ -230,5 +319,64 @@
    }
    .card {
       width: 100%;
+   }
+   .footer__buttom {
+      flex-wrap: wrap;
+      justify-content: center;
+      &-list {
+         margin-bottom: 10px;
+      }
+   }
+   .footer {
+      &-wrapper {
+         grid-template-columns: repeat(auto-fill(1fr));
+         grid-template-columns: 1fr;
+         grid-gap: 30px;
+         grid-auto-rows: auto;
+      }
+      &__logo {
+         width: 110px;
+         grid-row: 1 / 2;
+         grid-column: span 4;
+      }
+      &__categories {
+         grid-row: 3 / 3;
+         grid-column: span 4;
+      }
+      &__additional {
+         grid-column: span 4;
+      }
+      &__title {
+         font-size: 16px;
+      }
+      &__social-network {
+         grid-row: 2 / 3;
+         grid-column: span 4;
+         flex-wrap: wrap;
+      }
+      &__contact-details {
+         grid-column: span 4;
+      }
+      &__contact-form {
+         grid-column: span 4;
+      }
+      &__form {
+         margin-bottom: 10px;
+      }
+      &__input {
+         flex-basis: 100%;
+      }
+      &__buttom {
+         align-items: center;
+         justify-content: space-between;
+         grid-column: span 4;
+         &-link {
+            white-space: nowrap;
+            font-size: 10px;
+         }
+         &__buttom-ul {
+            column-gap: 5pxpx;
+         }
+      }
    }
 }
